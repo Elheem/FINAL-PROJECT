@@ -1,0 +1,170 @@
+.menu__container {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.menu__headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 600px;
+  max-width: 100%;
+  background: url("https://images.unsplash.com/photo-1586878341523-7acb55eb8c12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+    no-repeat center;
+  background-size: cover;
+}
+.menu__headline h1 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-weight: 500;
+  color: #c59d5f;
+  font-size: 6em;
+  margin-left: -20px;
+}
+.menu__headline h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  margin-top: -35px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.menu__list__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.menu__list__images-img {
+  width: 300px;
+  height: 218px;
+}
+.menu__list__images-img:hover {
+  transform: scale(1.03) !important;
+}
+.menu__list__text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 470px;
+  margin-top: -3rem;
+  margin-right: 15px;
+}
+.menu__list__text h1 {
+  font-family: "Herr Von Muellerhoff", "Lucida Handwriting", "Brush Script MT",
+    "Comic Sans", "Comic Sans MS", Chalkboard, cursive;
+  font-size: 7em;
+  font-weight: 400;
+  color: #c59d5f;
+  margin-right: 8px;
+}
+.menu__list__text h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: -50px -8px 30px 0;
+  letter-spacing: 10px;
+  font-size: 3em;
+  color: #3a3939;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.menu__list__text p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #515151;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.menu__list__text-logo {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #515151;
+}
+.menu__list__text-link {
+  margin-top: 30px;
+}
+.menu__list__text-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c59d5f;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: border 0.1s ease;
+  font-family: "Nunito", sans-serif;
+}
+.menu__list__text-link a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #c59d5f;
+}
+@media screen and (max-width: 1200px) {
+  .menu__list {
+    margin: 0 2rem;
+  }
+  .menu__list__images {
+    margin: 0 10px 0 -10px;
+  }
+  .menu__list__images-img {
+    max-width: 100%;
+    height: inherit;
+  }
+  .menu__list__text {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .menu__headline {
+    height: 470px;
+  }
+  .menu__list {
+    padding: 3.2rem 0;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  .menu__list__images {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .menu__list__images-img {
+    margin: 0;
+    height: inherit;
+    width: 100%;
+  }
+  .menu__list__text {
+    max-width: 100%;
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu__list {
+    padding-bottom: 2rem;
+  }
+  .menu__list__text h1 {
+    font-size: 5.5em;
+  }
+  .menu__list__text h2 {
+    font-size: 2em;
+    margin-top: -40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu__headline {
+    height: 300px;
+  }
+  .menu__headline h1 {
+    margin-top: -10px;
+  }
+  .menu__headline h2 {
+    letter-spacing: 7px;
+    margin-top: -30px;
+    font-size: 2em;
+    letter-spacing: 7px;
+  }
+}

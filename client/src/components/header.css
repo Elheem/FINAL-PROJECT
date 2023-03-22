@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+ .navbar {
+	 background: transparent;
+	 position: absolute;
+	 padding: 25px 0 20px 0;
+	 left: 0;
+	 right: 0;
+	 z-index: 9999;
+}
+ .navbar__container {
+	 max-width: 1200px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 margin: 0 auto;
+}
+ .navbar__brand {
+	 animation: brand 1.2s ease;
+	 z-index: 9999;
+}
+ .navbar__brand-image {
+	 display: flex;
+}
+ .navbar__sidebar-cta {
+	 display: none;
+	 z-index: 9999;
+}
+ .navbar__menu {
+	 animation: items 1.2s ease;
+}
+ .navbar__menu__list {
+	 display: flex;
+	 list-style-type: none;
+}
+ .navbar__menu__list-items {
+	 margin-right: 40px;
+	 align-items: center;
+	 display: flex;
+}
+ .navbar__menu__list-items:nth-child(5) {
+	 margin-right: 0;
+}
+ .navbar__menu__list-items a {
+	 text-decoration: none;
+	 color: #e0dbdb;
+	 text-transform: uppercase;
+	 font-weight: 600;
+	 font-size: 14px;
+	 font-family: "Nunito", sans-serif;
+	 letter-spacing: 2px;
+	 transition: color 0.3s ease;
+}
+ .navbar__menu__list-items a:hover {
+	 color: #c59d5f;
+}
+ .navbar__menu__list-items.active {
+	 margin-top: 4px;
+	 display: block;
+	 padding-bottom: 2px;
+	 content: "";
+	 border-bottom: solid 2px #c59d5f;
+	 cursor: pointer;
+}
+ @keyframes items {
+	 from {
+		 transform: translateY(-280px);
+	}
+	 to {
+		 transform: translateY(0);
+	}
+}
+ @keyframes brand {
+	 from {
+		 transform: translateY(-280px);
+	}
+	 to {
+		 transform: translateY(0);
+	}
+}
+ @media screen and (max-width: 1200px) {
+	 .navbar__container {
+		 margin: 0 2rem;
+	}
+}
+ @media screen and (max-width: 800px) {
+	 .navbar {
+		 background-color: rgba(9, 20, 34, 0.9);
+		 height: 60px;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 position: fixed;
+		 margin: 0;
+	}
+	 .navbar__container {
+		 width: 100%;
+		 margin: 0 1.5rem;
+	}
+	 .navbar__sidebar-cta {
+		 display: block;
+		 outline: none;
+		 background: none;
+		 border: none;
+		 color: white;
+		 font-size: 2em;
+		 animation: items 1.2s ease;
+		 cursor: pointer;
+	}
+	 .navbar__sidebar-cta svg {
+		 display: flex;
+	}
+	 .navbar__menu {
+		 background: rgba(9, 20, 34, 0.9);
+		 width: 100%;
+		 display: flex;
+		 justify-content: center;
+		 position: fixed;
+		 top: -0.5px;
+		 left: -100%;
+		 transition: 850ms;
+		 margin-top: 60px;
+	}
+	 .navbar__menu.active {
+		 left: 0;
+		 transition: 350ms;
+	}
+	 .navbar__menu__list {
+		 flex-direction: column;
+		 margin: 40px 0;
+		 align-items: center;
+	}
+	 .navbar__menu__list-items {
+		 margin-right: 0;
+		 text-align: center;
+		 height: 100%;
+		 align-items: center;
+		 margin-bottom: 2rem;
+	}
+	 .navbar__menu__list-items:nth-child(5) {
+		 margin-bottom: 0;
+	}
+	 .navbar__menu__list-items a {
+		 color: white;
+		 font-size: 20px;
+	}
+	 .navbar__menu__list-items.active {
+		 display: none;
+	}
+}
+ 

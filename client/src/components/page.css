@@ -1,0 +1,25 @@
+.menu__page, .reservation__page, .news__page, .contacts__page {
+	 background: url(../assets/hero.svg) center no-repeat;
+	 background-size: cover;
+	 min-height: 105vh;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+}
+ .menu__page .container, .reservation__page .container, .news__page .container, .contacts__page .container {
+	 background: linear-gradient(to right, #3a7f94 8e, #246449 91);
+	 border-radius: 10px;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 max-width: 80%;
+}
+ .menu__page .container h1, .reservation__page .container h1, .news__page .container h1, .contacts__page .container h1 {
+	 text-align: center;
+	 margin: 10px;
+	 font-size: 25px;
+	 color: #fff;
+	 font-family: "Nunito", sans-serif;
+	 font-weight: 400;
+}
+ 

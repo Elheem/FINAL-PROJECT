@@ -1,0 +1,21 @@
+.loading__screen {
+	 background: #10131b;
+	 height: 100vh;
+	 justify-content: center;
+	 align-items: center;
+	 display: flex;
+}
+ .loading__screen-img {
+	 animation: fade 1.2s linear;
+	 opacity: 1;
+}
+ @keyframes fade {
+	 from {
+		 transform: scale(1);
+	}
+	 to {
+		 transform: scale(0.1);
+		 opacity: 0;
+	}
+}
+ 

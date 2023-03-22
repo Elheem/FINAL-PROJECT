@@ -1,0 +1,90 @@
+.info {
+	 background: #121212;
+	 color: white;
+	 padding: 5rem 0;
+	 font-family: "Nunito", sans-serif;
+}
+ .info__container {
+	 display: flex;
+	 margin: 0 auto;
+	 justify-content: space-between;
+	 align-items: center;
+	 max-width: 1200px;
+}
+ .info__location h1 {
+	 margin-bottom: 1.5rem;
+}
+ .info__location__address {
+	 display: flex;
+	 line-height: 25px;
+}
+ .info__location__address-text {
+	 margin-right: 2.5rem;
+}
+ .info__location__address-text:nth-child(2) {
+	 margin-right: 0;
+}
+ .info__workhours h1 {
+	 margin-bottom: 1.5rem;
+}
+ .info__workhours__open {
+	 display: flex;
+	 line-height: 25px;
+}
+ .info__workhours__open-days {
+	 margin-right: 4rem;
+}
+ .info__workhours__open-days:nth-child(3) {
+	 margin-right: 0;
+}
+ @media screen and (max-width: 1200px) {
+	 .info__container {
+		 margin: 0 2rem;
+	}
+}
+ @media screen and (max-width: 960px) {
+	 .info {
+		 padding: 2.5rem 0;
+	}
+	 .info__container {
+		 margin: 0 1rem;
+		 flex-direction: column;
+	}
+	 .info__location {
+		 text-align: center;
+		 margin-bottom: 2rem;
+	}
+	 .info__workhours {
+		 text-align: center;
+	}
+	 .info__workhours__open-days {
+		 margin-right: 1.5rem;
+	}
+}
+ @media screen and (max-width: 450px) {
+	 .info__container {
+		 font-size: 14px;
+	}
+	 .info__location__address {
+		 flex-direction: column;
+		 justify-content: center;
+	}
+	 .info__location__address-text {
+		 margin-right: 0;
+		 margin-bottom: 1rem;
+	}
+	 .info__location__address-text:nth-child(2) {
+		 margin-bottom: 0;
+	}
+	 .info__workhours__open {
+		 flex-wrap: wrap;
+		 justify-content: center;
+	}
+	 .info__workhours__open-days {
+		 margin: 0.8rem;
+	}
+	 .info__workhours__open-days:nth-child(3) {
+		 margin-right: 0.8rem;
+	}
+}
+ 
